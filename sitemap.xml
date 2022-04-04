@@ -2,3 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/index</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/store</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/reviews</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/gallery-All</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/gallery-Lawn-Maintenance</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/gallery-Other-Services</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Lawn-Maintenance</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Landscape-Design-and-Installation</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Tree-Trimming</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Spring-and-Fall-Clean-Up</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Fire-Pit-Installation</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service-Walkways-and-Patios</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://devinandsonslandscaping.com/service--Christmas-Light-Installation</loc>
+        <lastmod>2022-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+</urlset>
