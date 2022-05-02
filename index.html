@@ -2049,7 +2049,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 26,
+        amountOfImages: 33,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -2175,11 +2175,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
                             
                         </div>
 
@@ -2196,11 +2196,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -2611,6 +2611,153 @@
                 </div>
             </li>
         
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 26; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/db33e02e-1c52-47c5-afd8-420fd4c9ab05.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/db33e02e-1c52-47c5-afd8-420fd4c9ab05.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/db33e02e-1c52-47c5-afd8-420fd4c9ab05.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/db33e02e-1c52-47c5-afd8-420fd4c9ab05.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 27; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf11bf4c-8622-44d4-83f5-6794918c6d89.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bf11bf4c-8622-44d4-83f5-6794918c6d89.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf11bf4c-8622-44d4-83f5-6794918c6d89.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/bf11bf4c-8622-44d4-83f5-6794918c6d89.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 28; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b18b85e8-fcb3-49d5-a491-fa27772cc906.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b18b85e8-fcb3-49d5-a491-fa27772cc906.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b18b85e8-fcb3-49d5-a491-fa27772cc906.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b18b85e8-fcb3-49d5-a491-fa27772cc906.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 29; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/37d53e2e-3ea9-4aee-8bae-37b77925d46a.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/37d53e2e-3ea9-4aee-8bae-37b77925d46a.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/37d53e2e-3ea9-4aee-8bae-37b77925d46a.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/37d53e2e-3ea9-4aee-8bae-37b77925d46a.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 30; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/72986766-59d0-4245-8038-a8cdbabfbf5f.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/72986766-59d0-4245-8038-a8cdbabfbf5f.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/72986766-59d0-4245-8038-a8cdbabfbf5f.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/72986766-59d0-4245-8038-a8cdbabfbf5f.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 31; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/985256e9-2fb8-40aa-bfde-6ffe304e43f8.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/985256e9-2fb8-40aa-bfde-6ffe304e43f8.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/985256e9-2fb8-40aa-bfde-6ffe304e43f8.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/985256e9-2fb8-40aa-bfde-6ffe304e43f8.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 32; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/20fe8a1a-a27b-4bb3-9b6b-45d3e696d782.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/20fe8a1a-a27b-4bb3-9b6b-45d3e696d782.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/20fe8a1a-a27b-4bb3-9b6b-45d3e696d782.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/20fe8a1a-a27b-4bb3-9b6b-45d3e696d782.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
     </ul>
 
     <!-- Gallery Modal -->
@@ -2702,7 +2849,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2710,7 +2857,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5983fece-3bd1-4107-81ab-40c6adb756d0.png" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e737d0ea-1006-4fb6-852e-93af3d92b4b6.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2867,6 +3014,62 @@
                                         
                                     </li>
                                 
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 26">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/db33e02e-1c52-47c5-afd8-420fd4c9ab05.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 27">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf11bf4c-8622-44d4-83f5-6794918c6d89.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 28">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b18b85e8-fcb3-49d5-a491-fa27772cc906.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 29">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/37d53e2e-3ea9-4aee-8bae-37b77925d46a.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 30">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/72986766-59d0-4245-8038-a8cdbabfbf5f.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 31">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/985256e9-2fb8-40aa-bfde-6ffe304e43f8.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 32">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/20fe8a1a-a27b-4bb3-9b6b-45d3e696d782.jpeg" alt="Landscape Design and Installation for Devin &amp; Son&#x27;s Landscaping in Versailles, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
                             </ul>
 
                             <button :class="activeImage < amountOfImages - 1 ? 'opacity-100' : 'opacity-0'" @click="next" class="text-6xl transition-opacity focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75">
@@ -3007,22 +3210,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -3113,22 +3301,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -3219,22 +3392,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -3275,7 +3433,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="58007"
+                                aria-controls="61663"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -3295,7 +3453,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="58007">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61663">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at (812) 290-6126. Thanks!</p>
                         </dd>
@@ -3308,7 +3466,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="58008"
+                                aria-controls="61664"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -3328,7 +3486,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="58008">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61664">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -3341,7 +3499,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="58009"
+                                aria-controls="61665"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -3361,7 +3519,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="58009">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61665">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3940,79 +4098,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191119"
-                                                    name="191119"
+                                                    id="contact-service-199872"
+                                                    name="199872"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Landscape Design and Installation"
                                             />
-                                            <label for="contact-label-service-191119" class="ml-3 text-sm font-medium text-gray-700">Landscape Design and Installation</label>
+                                            <label for="contact-label-service-199872" class="ml-3 text-sm font-medium text-gray-700">Landscape Design and Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191120"
-                                                    name="191120"
+                                                    id="contact-service-199873"
+                                                    name="199873"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Lawn Maintenance"
                                             />
-                                            <label for="contact-label-service-191120" class="ml-3 text-sm font-medium text-gray-700">Lawn Maintenance</label>
+                                            <label for="contact-label-service-199873" class="ml-3 text-sm font-medium text-gray-700">Lawn Maintenance</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191121"
-                                                    name="191121"
+                                                    id="contact-service-199874"
+                                                    name="199874"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tree Trimming"
                                             />
-                                            <label for="contact-label-service-191121" class="ml-3 text-sm font-medium text-gray-700">Tree Trimming</label>
+                                            <label for="contact-label-service-199874" class="ml-3 text-sm font-medium text-gray-700">Tree Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191122"
-                                                    name="191122"
+                                                    id="contact-service-199875"
+                                                    name="199875"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Spring and Fall Clean Up"
                                             />
-                                            <label for="contact-label-service-191122" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
+                                            <label for="contact-label-service-199875" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191123"
-                                                    name="191123"
+                                                    id="contact-service-199876"
+                                                    name="199876"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Walkways and Patios"
                                             />
-                                            <label for="contact-label-service-191123" class="ml-3 text-sm font-medium text-gray-700">Walkways and Patios</label>
+                                            <label for="contact-label-service-199876" class="ml-3 text-sm font-medium text-gray-700">Walkways and Patios</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191124"
-                                                    name="191124"
+                                                    id="contact-service-199877"
+                                                    name="199877"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fire Pit Installation"
                                             />
-                                            <label for="contact-label-service-191124" class="ml-3 text-sm font-medium text-gray-700">Fire Pit Installation</label>
+                                            <label for="contact-label-service-199877" class="ml-3 text-sm font-medium text-gray-700">Fire Pit Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191125"
-                                                    name="191125"
+                                                    id="contact-service-199878"
+                                                    name="199878"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value=" Christmas Light Installation"
                                             />
-                                            <label for="contact-label-service-191125" class="ml-3 text-sm font-medium text-gray-700"> Christmas Light Installation</label>
+                                            <label for="contact-label-service-199878" class="ml-3 text-sm font-medium text-gray-700"> Christmas Light Installation</label>
                                         </div>
                                         
                                     </div>
@@ -4043,79 +4201,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191119"
-                                                    name="191119"
+                                                    id="contact-service-199872"
+                                                    name="199872"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Landscape Design and Installation"
                                             />
-                                            <label for="contact-label-service-191119" class="ml-3 text-sm font-medium text-gray-700">Landscape Design and Installation</label>
+                                            <label for="contact-label-service-199872" class="ml-3 text-sm font-medium text-gray-700">Landscape Design and Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191120"
-                                                    name="191120"
+                                                    id="contact-service-199873"
+                                                    name="199873"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Lawn Maintenance"
                                             />
-                                            <label for="contact-label-service-191120" class="ml-3 text-sm font-medium text-gray-700">Lawn Maintenance</label>
+                                            <label for="contact-label-service-199873" class="ml-3 text-sm font-medium text-gray-700">Lawn Maintenance</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191121"
-                                                    name="191121"
+                                                    id="contact-service-199874"
+                                                    name="199874"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tree Trimming"
                                             />
-                                            <label for="contact-label-service-191121" class="ml-3 text-sm font-medium text-gray-700">Tree Trimming</label>
+                                            <label for="contact-label-service-199874" class="ml-3 text-sm font-medium text-gray-700">Tree Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191122"
-                                                    name="191122"
+                                                    id="contact-service-199875"
+                                                    name="199875"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Spring and Fall Clean Up"
                                             />
-                                            <label for="contact-label-service-191122" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
+                                            <label for="contact-label-service-199875" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191123"
-                                                    name="191123"
+                                                    id="contact-service-199876"
+                                                    name="199876"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Walkways and Patios"
                                             />
-                                            <label for="contact-label-service-191123" class="ml-3 text-sm font-medium text-gray-700">Walkways and Patios</label>
+                                            <label for="contact-label-service-199876" class="ml-3 text-sm font-medium text-gray-700">Walkways and Patios</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191124"
-                                                    name="191124"
+                                                    id="contact-service-199877"
+                                                    name="199877"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fire Pit Installation"
                                             />
-                                            <label for="contact-label-service-191124" class="ml-3 text-sm font-medium text-gray-700">Fire Pit Installation</label>
+                                            <label for="contact-label-service-199877" class="ml-3 text-sm font-medium text-gray-700">Fire Pit Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-191125"
-                                                    name="191125"
+                                                    id="contact-service-199878"
+                                                    name="199878"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value=" Christmas Light Installation"
                                             />
-                                            <label for="contact-label-service-191125" class="ml-3 text-sm font-medium text-gray-700"> Christmas Light Installation</label>
+                                            <label for="contact-label-service-199878" class="ml-3 text-sm font-medium text-gray-700"> Christmas Light Installation</label>
                                         </div>
                                         
                                     </div>
